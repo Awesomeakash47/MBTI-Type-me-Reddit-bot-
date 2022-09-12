@@ -2,17 +2,19 @@ import praw
 from cognitive_function import *
 
 reddit = praw.Reddit(
-    client_id="cliend_id",                         #change appropriatly
-    client_secret="client_secret",
-    password="Reddit_password",
-    user_agent="your user agent",
-    username="Reddit_username",
+    client_id="ErpG6kSC1Z3Rug9t0Led-A",
+    client_secret="YpeQLg85Xvbls9ChNATn42fixwMDvw",
+    password="heheboi123",
+    user_agent="<Console:Frosty:1.0>",
+    username="Imaginary_Outcome47",
 )
+
+#submission = reddit.submission(url="https://www.reddit.com/user/AwesomeAkash47/comments/wo8m3y/bot_testing/")
 
 def parse_input(comment):
     print(comment.body)
     cog_inp = comment.body.lower()
-    cog_inp = cog_inp.replace('u/username', '')    #change your bot usernamew
+    cog_inp = cog_inp.replace('u/imaginary_outcome47', '')
     cog_inp = cog_inp.split(',')
     return cog_inp
 
